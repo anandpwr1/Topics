@@ -9,6 +9,7 @@ import Accordian from "./components/Accordian";
 import Comments from "./components/Comments";
 import ImageSlider from "./components/ImageSlider";
 import Pagination from "./components/Pagination";
+import LiveChat from "./components/Live Chats/LiveChat";
 
 const App = () => {
   const [lang, setLang] = useState("en");
@@ -25,6 +26,7 @@ const App = () => {
           <a href="/nestedComments">Comments</a>
           <a href="/imageSlider">Image Slider</a>
           <a href="/pagination">Pagination</a>
+          <a href="/liveChat">Live Chat</a>
         </nav>
         <select
           className="text-gray-500"
@@ -47,6 +49,7 @@ const App = () => {
           <Route path="/nestedComments" element={<Comments />}></Route>
           <Route path="/imageSlider" element={<ImageSlider />}></Route>
           <Route path="/pagination" element={<Pagination />}></Route>
+          <Route path="/liveChat" element={<LiveChat />}></Route>
         </Routes>
       </BrowserRouter>
     </>
